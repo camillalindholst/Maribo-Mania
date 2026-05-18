@@ -1,3 +1,5 @@
+
+
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
@@ -30,3 +32,163 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 år senere - Sangtekst</title>
+    <style>
+        :root {
+            --summer-orange: #ff7e5f;
+            --summer-pink: #feb47b;
+            --deep-blue: #2c3e50;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, var(--summer-orange), var(--summer-pink));
+            background-attachment: fixed;
+            color: var(--deep-blue);
+            display: flex;
+            justify-content: center;
+        }
+
+        .phone-container {
+            width: 100%;
+            max-width: 500px;
+            min-height: 100vh;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px 25px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--summer-orange);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #d35400;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .lyrics-section {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            white-space: pre-line;
+            padding-bottom: 100px;
+        }
+
+        .verse {
+            margin-bottom: 35px;
+        }
+
+        .chorus {
+            background: linear-gradient(to right, rgba(255, 126, 95, 0.1), rgba(254, 180, 123, 0.1));
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid var(--summer-orange);
+            font-weight: 700;
+            margin: 30px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .section-tag {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: var(--summer-orange);
+            margin-bottom: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* Scroll-bar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--summer-orange);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="phone-container">
+    <header>
+        <h1>5 år senere</h1>
+        <div class="subtitle">Maribo Mania 2026</div>
+    </header>
+
+    <div class="lyrics-section">
+        
+        <div class="verse">
+            <span class="section-tag">[Vers 1]</span>
+            Her indsætter du teksten fra dit dokument.
+            Hver linje du skriver her,
+            vil stå tydeligt og klart på mobilen.
+            Det er nemt at læse, mens man skråler med.
+        </div>
+
+        <div class="chorus">
+            <span class="section-tag">[Omkvæd]</span>
+            Dette er omkvædet i sangen.
+            Det skiller sig ud med en flot baggrund,
+            så alle ved, hvornår der skal trykkes igennem!
+            Sommer, sol og 5 år senere.
+        </div>
+
+        <div class="verse">
+            <span class="section-tag">[Vers 2]</span>
+            Næste vers fortsætter her.
+            Layoutet sørger for, at man bare kan scrolle
+            med tommelfingeren, mens man har en kold
+            Breezer i den anden hånd.
+        </div>
+
+        <div class="chorus">
+            <span class="section-tag">[Omkvæd]</span>
+            Dette er omkvædet i sangen.
+            Det skiller sig ud med en flot baggrund,
+            så alle ved, hvornår der skal trykkes igennem!
+            Sommer, sol og 5 år senere.
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 - Maribo Mania Festival
+    </footer>
+</div>
+
+</body>
+</html>
+

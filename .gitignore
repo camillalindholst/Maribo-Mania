@@ -38,157 +38,102 @@ go.work.sum
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 år senere - Sangtekst</title>
+    <title>5 år senere - Maribo Mania 2026</title>
     <style>
         :root {
-            --summer-orange: #ff7e5f;
-            --summer-pink: #feb47b;
-            --deep-blue: #2c3e50;
-            --white: #ffffff;
+            --filur-red: #ff2e63;
+            --filur-yellow: #ffc93c;
+            --dark-disco: #1a1a24;
+            --text-light: #ffffff;
         }
 
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, var(--summer-orange), var(--summer-pink));
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, var(--filur-red), var(--filur-yellow));
             background-attachment: fixed;
-            color: var(--deep-blue);
+            color: var(--dark-disco);
             display: flex;
             justify-content: center;
         }
 
         .phone-container {
             width: 100%;
-            max-width: 500px;
+            max-width: 480px;
             min-height: 100vh;
-            background: rgba(255, 255, 255, 0.92);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            padding: 40px 25px;
+            background: rgba(26, 26, 36, 0.95);
+            color: var(--text-light);
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            padding: 30px 20px;
             box-sizing: border-box;
             text-align: center;
         }
 
         header {
-            margin-bottom: 40px;
-            border-bottom: 2px solid var(--summer-orange);
+            margin-bottom: 35px;
+            border-bottom: 3px dashed var(--filur-yellow);
             padding-bottom: 20px;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #d35400;
+            color: var(--filur-yellow);
+            text-shadow: 3px 3px 0px var(--filur-red);
         }
 
         .subtitle {
-            font-size: 1.1rem;
-            color: #7f8c8d;
-            margin-top: 5px;
-            font-style: italic;
+            font-size: 1.2rem;
+            color: #a0a0b8;
+            margin-top: 8px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
 
         .lyrics-section {
             line-height: 1.8;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             white-space: pre-line;
-            padding-bottom: 100px;
+            padding-bottom: 60px;
         }
 
         .verse {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
+            color: #e2e2ec;
         }
 
         .chorus {
-            background: linear-gradient(to right, rgba(255, 126, 95, 0.1), rgba(254, 180, 123, 0.1));
-            padding: 20px;
-            border-radius: 15px;
-            border-left: 5px solid var(--summer-orange);
+            background: linear-gradient(135deg, rgba(255, 46, 99, 0.2), rgba(255, 201, 60, 0.2));
+            padding: 25px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--filur-yellow);
             font-weight: 700;
-            margin: 30px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin: 40px 0;
+            box-shadow: 0 0 15px rgba(255, 201, 60, 0.2);
+            color: var(--filur-yellow);
         }
 
         .section-tag {
             display: block;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            color: var(--summer-orange);
-            margin-bottom: 10px;
-            font-weight: bold;
+            color: var(--filur-red);
+            background: var(--filur-yellow);
+            padding: 2px 10px;
+            border-radius: 5px;
+            width: fit-content;
+            margin: 0 auto 15px auto;
+            font-weight: 900;
             letter-spacing: 1px;
+            box-shadow: 2px 2px 0px var(--text-light);
         }
 
-        footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            opacity: 0.6;
-        }
+        .chorus .section-tag {
+            color: var(--filur-yellow);
+            background: var(--filur-red
 
-        /* Scroll-bar styling */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--summer-orange);
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="phone-container">
-    <header>
-        <h1>5 år senere</h1>
-        <div class="subtitle">Maribo Mania 2026</div>
-    </header>
-
-    <div class="lyrics-section">
-        
-        <div class="verse">
-            <span class="section-tag">[Vers 1]</span>
-            Her indsætter du teksten fra dit dokument.
-            Hver linje du skriver her,
-            vil stå tydeligt og klart på mobilen.
-            Det er nemt at læse, mens man skråler med.
-        </div>
-
-        <div class="chorus">
-            <span class="section-tag">[Omkvæd]</span>
-            Dette er omkvædet i sangen.
-            Det skiller sig ud med en flot baggrund,
-            så alle ved, hvornår der skal trykkes igennem!
-            Sommer, sol og 5 år senere.
-        </div>
-
-        <div class="verse">
-            <span class="section-tag">[Vers 2]</span>
-            Næste vers fortsætter her.
-            Layoutet sørger for, at man bare kan scrolle
-            med tommelfingeren, mens man har en kold
-            Breezer i den anden hånd.
-        </div>
-
-        <div class="chorus">
-            <span class="section-tag">[Omkvæd]</span>
-            Dette er omkvædet i sangen.
-            Det skiller sig ud med en flot baggrund,
-            så alle ved, hvornår der skal trykkes igennem!
-            Sommer, sol og 5 år senere.
-        </div>
-
-    </div>
-
-    <footer>
-        &copy; 2026 - Maribo Mania Festival
-    </footer>
-</div>
-
-</body>
-</html>
 

@@ -10,12 +10,13 @@
             --filur-yellow: #ffc93c;
             --dark-disco: #1a1a24;
             --text-light: #ffffff;
+            --neon-glow: #00f5ff;
         }
 
         body {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background: linear-gradient(135deg, var(--filur-red), var(--filur-yellow));
             background-attachment: fixed;
             color: var(--dark-disco);
@@ -27,94 +28,124 @@
             width: 100%;
             max-width: 480px;
             min-height: 100vh;
-            background: rgba(26, 26, 36, 0.95);
+            background: rgba(26, 26, 36, 0.96);
             color: var(--text-light);
-            box-shadow: 0 0 30px rgba(0,0,0,0.5);
-            padding: 30px 20px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.6);
+            padding: 35px 18px;
             box-sizing: border-box;
             text-align: center;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             border-bottom: 3px dashed var(--filur-yellow);
             padding-bottom: 20px;
         }
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             color: var(--filur-yellow);
             text-shadow: 3px 3px 0px var(--filur-red);
+            font-weight: 900;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #a0a0b8;
             margin-top: 8px;
-            font-weight: bold;
-            letter-spacing: 3px;
+            font-weight: 800;
+            letter-spacing: 4px;
             text-transform: uppercase;
         }
 
         .lyrics-section {
-            line-height: 1.8;
-            font-size: 1.25rem;
+            line-height: 1.7;
+            font-size: 1.05rem; /* Justeret ned så de lange linjer kan være på én linje */
             white-space: pre-line;
-            padding-bottom: 60px;
+            flex-grow: 1;
         }
 
         .verse {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             color: #e2e2ec;
         }
 
         .chorus {
-            background: linear-gradient(135deg, rgba(255, 46, 99, 0.2), rgba(255, 201, 60, 0.2));
-            padding: 25px 15px;
-            border-radius: 20px;
-            border: 2px solid var(--filur-yellow);
-            font-weight: 700;
-            margin: 40px 0;
-            box-shadow: 0 0 15px rgba(255, 201, 60, 0.2);
+            font-weight: 800;
             color: var(--filur-yellow);
+            text-shadow: 0 0 10px rgba(255, 201, 60, 0.3);
+            margin: 30px 0;
+            padding: 0 10px;
         }
 
         .section-tag {
             display: block;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            color: var(--filur-red);
+            color: var(--dark-disco);
             background: var(--filur-yellow);
-            padding: 2px 10px;
-            border-radius: 5px;
+            padding: 2px 8px;
+            border-radius: 4px;
             width: fit-content;
-            margin: 0 auto 15px auto;
+            margin: 0 auto 12px auto;
             font-weight: 900;
             letter-spacing: 1px;
-            box-shadow: 2px 2px 0px var(--text-light);
         }
 
         .chorus .section-tag {
-            color: var(--filur-yellow);
+            color: var(--text-light);
             background: var(--filur-red);
-            box-shadow: 2px 2px 0px var(--filur-yellow);
+        }
+
+        /* Smooth, svævende ikoner uden baggrund */
+        .icon-divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 25px 0;
+            opacity: 0.85;
+        }
+
+        .icon-divider svg {
+            width: 28px;
+            height: 28px;
+            filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.3));
+        }
+
+        /* Takke-boks */
+        .thanks-box {
+            background: linear-gradient(135deg, rgba(255, 46, 99, 0.15), rgba(255, 201, 60, 0.15));
+            border: 1px solid rgba(255, 201, 60, 0.3);
+            padding: 18px;
+            border-radius: 12px;
+            margin: 40px auto 20px auto;
+            max-width: 85%;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--filur-yellow);
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         footer {
-            margin-top: 20px;
-            font-size: 0.85rem;
-            color: #63637b;
+            margin-top: auto;
+            font-size: 0.8rem;
+            color: #53536c;
             border-top: 1px solid #2a2a3a;
-            padding-top: 20px;
+            padding-top: 15px;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         /* Mobil-optimering af scrollbar */
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 4px;
         }
         ::-webkit-scrollbar-track {
             background: var(--dark-disco);
@@ -149,6 +180,11 @@
             Mobil-lommelygte under flasken, gjorde det til spot
         </div>
 
+        <div class="icon-divider">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffc93c" stroke-width="2"><path d="M12 2L2 22h20L12 2zM12 2v20M2 22l10-8 10 8"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff2e63" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3" fill="#ff2e63"/><circle cx="18" cy="16" r="3" fill="#ff2e63"/></svg>
+        </div>
+
         <div class="verse">
             <span class="section-tag">Pre-hook</span>
             Opkast på tæppet, stadig plet der aldrig går
@@ -169,6 +205,11 @@
             Fem år senere stadig os, stadig stærke samme klang
         </div>
 
+        <div class="icon-divider">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff2e63" stroke-width="2"><path d="M3 3h18l-9 9-9-9zM12 12v9M8 21h8M16 6l2-3"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffc93c" stroke-width="2"><path d="M12 12L4 20c-1 1-1 2 0 2s1 0 2-2l6-8M15 4l1 1M19 7l1-1M15 9h2M11 5l-1-1M17 3l-1 1"/></svg>
+        </div>
+
         <div class="verse">
             <span class="section-tag">Vers 2</span>
             Fancy cocktails, champagne, classy galla-look
@@ -183,6 +224,11 @@
             Alle blev en del af holdet, alle fandt en plads et sted
         </div>
 
+        <div class="icon-divider">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffc93c" stroke-width="2.5"><path d="M4 4c6 0 16 4 16 16 0-6-4-16-16-16zM4 4c1 3 3 5 6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff2e63" stroke-width="2"><rect x="9" y="10" width="6" height="12" rx="1"/><path d="M10 10V5l4-2v7"/></svg>
+        </div>
+
         <div class="chorus">
             <span class="section-tag">Hook</span>
             For vi var følelsen, vi var sommernætter tændt
@@ -193,6 +239,10 @@
             Masser moralske dagen efter, næste fredag var vi op’
             Repeat på de bedste minder, samme grin og samme sang
             Fem år senere stadig os, stadig stærke samme klang
+        </div>
+
+        <div class="icon-divider">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff2e63" stroke-width="2" fill="rgba(255,46,99,0.1)"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
 
         <div class="verse">
@@ -209,8 +259,12 @@
 
     </div>
 
+    <div class="thanks-box">
+        Tusinde tak for jer
+    </div>
+
     <footer>
-        OFFICIELT FESTIVALPROGRAM &bull; MARIBO MANIA 2026
+        Camilla Buus Lindholst &bull; MARIBO MANIA 2026
     </footer>
 </div>
 
